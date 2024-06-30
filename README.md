@@ -25,7 +25,7 @@ Este proyecto se realizó con el objetivo de testear la aplicación web de Urban
 1. Asegúrate de tener instaladas las tecnologías mencionadas anteriormente, excepto el IDE, que puede ser de tu preferencia.
 2. Esperar a que se ejecuten las 9 pruebas. La ejecución finaliza cuando se cierra el navegador.ron exitosamente.
 # Ejecutar el proyecto.
-De manera sensilla se puede ejecutar desde la terminal.
+De manera sencilla se puede ejecutar desde la terminal.
 El formato del comando es el siguiente: pytest folder/de/proyecto/tests.py
 Ejemplo: pytest /home/royer/projects/qa-project-Urban-Routes-es/main.py
 
