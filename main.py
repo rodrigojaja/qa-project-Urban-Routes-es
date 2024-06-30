@@ -221,7 +221,7 @@ class UrbanRoutesPage:
         return emergente.text
 #darle tiempo
     def set_tiempo(self):
-        time.sleep(40)
+        nuevaVentana = WebDriverWait(self.driver, 40).until(EC.text_to_be_present_in_element((self.titulo_ventana_emerente), 'El conductor llegará en'))
 #el coductor llegara en...
     def get_comprobar_informacion_de_conductor(self):
         otro = WebDriverWait(self.driver, 60).until(EC.presence_of_element_located((self.titulo_ventana_emerente)))
@@ -280,7 +280,6 @@ class TestUrbanRoutes:
         comentario = data.message_for_driver
         routes_page.set_agregar_comentario(comentario)
         assert routes_page.get_comprobar_comentario() == comentario
-        time.sleep(5)
     def test_seleccionar_manta_y_pañuelos(self):
         routes_page = UrbanRoutesPage(self.driver)
         routes_page.set_click_manta_y_pañuelos()
